@@ -27,7 +27,7 @@ steps:
 - task: NuGetCommand@2
   inputs:
     command: push
-    publishVstsFeed: 'MyNuGetFeed'  # Ensure this is the correct Azure Artifacts feed name
+    publishVstsFeed: 'Feed1'  # Ensure this is the correct Azure Artifacts feed name
     packagesToPush: '$(Build.ArtifactStagingDirectory)/*.nupkg'
 
 
